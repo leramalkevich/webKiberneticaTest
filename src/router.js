@@ -11,7 +11,7 @@ export class Router {
             {
                 route: '/',
                 title: 'Главная страница',
-                filePath: '/tamplates/main.html',
+                filePath: '/templates/main.html',
                 load: () => {
                     new Main();
                 }
@@ -19,7 +19,7 @@ export class Router {
             {
                 route: '/login',
                 title: 'Войти в систему',
-                filePath: '/tamplates/login.html',
+                filePath: '/templates/login.html',
                 load: () => {
                     new Login();
                 }
