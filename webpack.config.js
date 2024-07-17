@@ -13,6 +13,18 @@ module.exports = {
         port: 9005,
         historyApiFallback: true,
     },
+    module: {
+        rules: [
+            {
+                test: /\.scss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
+                ],
+            },
+        ],
+    },
     output: {
         filename: 'app.js',
         path: path.resolve(__dirname, 'dist'),
@@ -24,6 +36,9 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {from: "./src/templates", to: "templates"},
+                {from: "./src/assets/images", to: "images"},
+                {from: "./src/assets/fonts", to: "fonts"},
             ],
-        }),],
+        }),
+    ],
 };

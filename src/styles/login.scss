@@ -1,0 +1,125 @@
+.login {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+
+    .login-block {
+      max-width: 500px;
+      padding: 24px;
+      background: #F0F4FC;
+      margin: 102px 0;
+
+      .close-block {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+
+        .close {
+          width: 52px;
+          height: 52px;
+          background: #FFFFFF;
+          padding: 14px;
+          border-radius: 10px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
+      }
+
+      .form {
+        .form-title {
+          font-family: ManropeMedium, sans-serif;
+          font-size: 24px;
+          line-height: 32.78px;
+          color: #323232;
+          margin-bottom: 18px;
+        }
+
+        .input {
+          margin-bottom: 5px;
+
+          input {
+            width: 452px;
+            padding: 24px;
+            font-family: ManropeMedium, sans-serif;
+            font-size: 18px;
+            line-height: 24.59px;
+            color: #1F4284;
+            background: #D7E2F6;
+            border-radius: 10px;
+            border: none;
+            box-sizing: border-box;
+            outline: none;
+
+          }
+
+          ::placeholder {
+            color: #1F4284;
+          }
+        }
+
+        .check {
+          margin-top: 20px;
+          margin-bottom: 28px;
+          display: flex;
+          align-items: center;
+
+          input[type = 'checkbox'] {
+            margin-right: 15px;
+            margin-left: 0;
+            width: 18px;
+            height: 18px;
+          }
+
+          label {
+            font-family: Manrope, sans-serif;
+            font-size: 18px;
+          }
+        }
+
+        .restore {
+          margin-bottom: 36px;
+          a {
+            font-family: ManropeMedium, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+            color: #244C98;
+          }
+        }
+
+        .actions {
+          display: flex;
+          flex-flow: column;
+          .button {
+            padding: 18px;
+            box-sizing: border-box;
+            //border: none;
+            cursor: pointer;
+            font-family: ManropeMedium, sans-serif;
+            font-size: 18px;
+            border: 1px solid #244C98;
+            border-radius: 4px;
+          }
+          .button:first-child {
+            margin-bottom: 5px;
+          }
+          .enter-button {
+            background: #244C98;
+            color: #FFFFFF;
+          }
+          .registration-button {
+            background: transparent;
+            color: #244C98;
+            a {
+              text-decoration: none;
+              color: #244C98;
+            }
+          }
+        }
+      }
+    }
+  }
+}
